@@ -310,6 +310,61 @@ img {
   }
 }
 
+//contact page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      //Grid areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-c {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
 //footer
 #main-footer {
   background: $dark-color;
@@ -339,3 +394,6 @@ img {
     }
   }
 }
+
+// Import Media Queries
+@import "media";
