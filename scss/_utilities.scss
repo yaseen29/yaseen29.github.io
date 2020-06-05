@@ -97,3 +97,23 @@ input[class^="btn-"]:hover {
   font-weight: 100;
   text-transform: uppercase;
 }
+
+//background colors
+.bg {
+  &-light {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+  &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
