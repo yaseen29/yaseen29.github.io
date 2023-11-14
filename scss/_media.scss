@@ -7,6 +7,21 @@
       padding-top: 5rem;
     }
   }
+
+  #about-b {
+    .skillz {
+      flex-wrap: wrap;
+
+      .part1 .progress {
+        width: 100%;
+        display: block;
+      }
+      .part2 .progress {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
 }
 
 // Smartphones
@@ -78,6 +93,21 @@
       }
     }
 
+    &-b {
+      .skillz {
+        flex-wrap: wrap;
+
+        .part1 .progress {
+          width: 100%;
+          display: block;
+        }
+        .part2 .progress {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
     &-c {
       display: none;
     }
@@ -137,6 +167,15 @@
   #header-home {
     .header-content {
       padding-top: 3rem;
+    }
+  }
+
+  #main-footer {
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+      flex-wrap: wrap;
     }
   }
 }

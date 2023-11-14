@@ -35,10 +35,11 @@ img {
 
 //logo
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 129px;
+  height: 50px;
   color: #fff;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 
 //main nav
@@ -53,6 +54,10 @@ img {
 
   li {
     padding: 1rem 1.5rem;
+  }
+
+  #logo_link:hover {
+    border: none;
   }
 
   a {
@@ -119,6 +124,16 @@ img {
         color: $main-color;
         padding-bottom: 0.4rem;
       }
+    }
+    .learn {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      font-weight: bold;
+      color: $link;
     }
   }
   // Home section B
@@ -222,6 +237,27 @@ img {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+      p {
+        text-align: left;
+        margin-top: 4px;
+
+        a {
+          font-weight: bold;
+          font-size: 20px;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+      ul {
+        text-align: left;
+        list-style: disc;
+        font-weight: bold;
+        margin-left: 2rem;
+        margin-top: 5px;
+        margin-top: 5px;
+      }
     }
 
     .award {
@@ -253,18 +289,24 @@ img {
   }
 
   &-b {
-    .progress {
-      overflow: hidden;
-      height: 20px;
-      background: $medium-color;
-      border-radius: 5px;
-      margin-bottom: 0.6rem;
+    .skillz {
+      display: flex;
+      justify-content: space-between;
 
-      div {
-        height: 100%;
-        color: #fff;
-        text-align: center;
-        background: $main-color;
+      .progress {
+        overflow: hidden;
+        height: 20px;
+        background: $medium-color;
+        border-radius: 5px;
+        margin-bottom: 0.6rem;
+        width: 600px;
+
+        div {
+          height: 100%;
+          color: #fff;
+          text-align: center;
+          background: $main-color;
+        }
       }
     }
   }
@@ -346,7 +388,10 @@ img {
     }
 
     button[type="submit"] {
-      width: 50%;
+      width: 10%;
+      height: 30%;
+      border-radius: 30px;
+      margin-top: -70px;
     }
   }
 
@@ -365,11 +410,124 @@ img {
   }
 }
 
+#netflix_body {
+  h2 {
+    margin-top: 4rem;
+  }
+  strong {
+    color: $main-color;
+  }
+
+  div:nth-child(2) {
+    margin-bottom: 7rem;
+  }
+
+  img {
+    margin-top: 3rem;
+  }
+
+  a {
+    transition: all 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+      color: $medium-color;
+    }
+  }
+}
+
+#codecast_body {
+  .section-title {
+    margin-top: 4rem;
+  }
+  .codecast_title {
+    margin: 3rem 0 1rem 0;
+  }
+  strong {
+    color: $main-color;
+  }
+  .codecast_text strong {
+    color: #000;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 3rem;
+
+    li {
+      font-size: 18px;
+      color: $dark-color;
+    }
+  }
+
+  div:nth-child(2) {
+    margin-bottom: 7rem;
+  }
+
+  img {
+    margin-top: 3rem;
+  }
+
+  a {
+    transition: all 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+      color: $medium-color;
+    }
+  }
+}
+
+#prime_gaming_body {
+  .section-title {
+    margin-top: 4rem;
+  }
+  strong {
+    color: $main-color;
+  }
+
+  div:nth-child(2) {
+    margin-bottom: 7rem;
+  }
+
+  img {
+    margin-top: 3rem;
+  }
+
+  a {
+    transition: all 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+      color: $main-color;
+    }
+  }
+  .bold {
+    font-weight: bold;
+    margin-bottom: -3px;
+  }
+}
+
+a {
+  transition: all 0.5s;
+  &:hover {
+    color: $main-color;
+  }
+  #back-arrow {
+    display: inline-block;
+    margin: 4rem 0 0 8rem;
+    font-size: 1.5rem;
+    i {
+      margin-right: 3px;
+    }
+  }
+}
+
 //footer
 #main-footer {
   background: $dark-color;
   color: #fff;
-  height: 5rem;
+  height: 10rem;
 
   .footer-content {
     display: flex;
@@ -377,19 +535,40 @@ img {
     height: inherit;
     align-items: center;
 
-    .social .fab {
-      margin-right: 1rem;
-      border: 2px #fff solid;
-      border-radius: 50%;
-      height: 20px;
-      width: 20px;
-      line-height: 20px;
-      text-align: center;
-      padding: 0.5rem;
+    .titre {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+    a {
+      color: #fff;
       transition: all 0.5s;
 
       &:hover {
-        background: $main-color;
+        color: $main-color;
+      }
+    }
+
+    .social {
+      .fab {
+        margin-right: 1rem;
+        border: 2px #fff solid;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0.5rem;
+        transition: all 0.5s;
+        &:hover {
+          background: $main-color;
+        }
+      }
+      a {
+        color: #fff;
       }
     }
   }

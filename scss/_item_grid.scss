@@ -3,6 +3,9 @@
   grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   gap: 0.1rem;
+  a {
+    color: #fff;
+  }
 }
 
 .item {
@@ -98,4 +101,33 @@
     opacity: 0.7;
     margin: 0;
   }
+}
+
+.photography_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  gap: 0.2rem;
+  margin-top: 6rem;
+}
+
+.photography_item {
+  position: relative;
+  // background: $main-color;
+  overflow: hidden;
+
+  // &-image {
+  //   height: auto;
+  //   transform: translateZ(0);
+  //   display: block;
+
+  //   img {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: auto;
+  //     line-height: 0;
+  //   }
+  // }
 }

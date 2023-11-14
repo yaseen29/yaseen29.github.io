@@ -24,6 +24,8 @@
     @extend %btn-shared;
     color: #333;
     background-color: $light-color;
+    border-radius: 30px;
+    font-weight: bold;
   }
   &-dark {
     @extend %btn-shared;
@@ -36,6 +38,7 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: $main-color;
+  color: #000;
 }
 
 .lead {
